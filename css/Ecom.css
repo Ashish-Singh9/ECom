@@ -1,0 +1,207 @@
+@media (max-width: 600px) {
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr)!important;
+        grid-template-rows: 10vh 10vh 80vh minmax(80vh,auto) !important;
+    }
+    #nav{
+        grid-column: 1!important;
+        grid-row: 1!important;
+        
+    }
+    #addProductForm{
+        grid-column: 1!important;
+    }
+    #addProductToDom{
+      grid-row: 4!important;
+      grid-column: 1!important;   
+      grid-template-columns: repeat(1,1fr)!important;
+      grid-template-rows: repeat(2,1fr)!important;
+    }
+    .card{
+        
+        width: 95%!important;
+        grid-template-columns: 30vw auto !important;
+        
+    }
+    .img{
+        width: 30vw !important;
+    }
+    #pro{
+        font-size: 1em !important;
+        grid-row-gap: 3px !important;
+    }
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0;
+    max-height: 100vh;
+   
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 10vh 10vh 80vh;
+}
+#nav{
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: turquoise;
+}
+#heading{
+    
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1/4;
+    background: white;
+}
+#heading h2{
+    font-size: 1.9em;
+    font-weight: 800;
+    letter-spacing:1px ;
+    word-spacing: 3px;
+}
+#addProductForm{
+    grid-row: 3;
+    grid-column: 1;
+    border-radius: 5px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(6,1fr);
+    padding: 10px;
+}
+input{
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+#addProductBtn{
+    background-color: rgb(32, 32, 195);
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#addProductToDom{
+  grid-row: 3;
+  grid-column: 2/4;   
+  
+  background: #464855;
+}
+#addProductToDom{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-items: center;
+    grid-row-gap: 5px;
+    padding: 5px;
+    overflow-y: scroll;
+    border-radius: 5px;
+}
+#addProductForm div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+#addProductForm label{
+    font-size: 1.3em;
+    font-weight: 800;
+    margin: 5px;
+}
+#addProductForm input{
+    height: 40px;
+}
+#addProductForm button{
+    border-radius: 5px;
+    border:2px solid black;
+    outline: none;
+}
+.card{
+    width: 90%;
+    margin: 7px;
+    display: grid;
+    grid-template-columns: 22vw auto;
+    grid-template-rows: 30vh 6vh;
+    background-color: white;
+    border-radius: 5px;
+}
+.img{
+    grid-column: 1;
+    grid-row: 1/2;
+    height: 36vh;
+    width: 22vw;
+    border-radius: 30%;
+    background-color: yellowgreen;
+}
+.productDetails{
+    grid-column: 2;
+    grid-row: 1;
+    height:30vh;
+    
+}
+.btn{
+    grid-column: 2;
+    grid-row: 2;
+    height: 6vh;
+    
+}
+.btnShow{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1px;
+}
+.btnShow button{
+    height: 5.3vh;
+    outline: none;
+    border: 2px;
+    width: 48%;
+    color: white;
+    border-radius: 5px;
+}
+.btnShow button:hover{
+    border:2px solid black ;
+    transition: 100ms;
+}
+.hide{
+    display: none;
+}
+#pro{
+    padding: 5px;
+    font-size: 1.2em;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-row-gap: 5px;
+    align-items: center;
+    
+    justify-content: center;
+}
+#pro input{
+    height: 35px;
+}
+#pro div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+/*remove arrow from input of type number*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
