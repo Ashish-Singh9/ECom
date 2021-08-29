@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Ecom.css">
+    <title>ECom</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="nav"></div>
+        <div id="heading">
+            <h2>Welcome Admin</h2>
+        </div>
+        <form id="addProductForm">
+            <div>
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName" placeholder="Product Name">
+            </div>
+            <div>
+                <label for="productDescription">Product Description</label>
+                <input type="text" id="productDescription" placeholder="Product Description">
+            </div>
+            <div>
+                <label for="productPrice">Product Price</label>
+                <input type="number" id="productPrice" placeholder="Product Price">
+            </div>
+            <div>
+                <label for="productQuantity">Product Quantity</label>
+                <input type="text" id="productQuantity" placeholder="Product Quantity">
+            </div>
+            <div>
+                <label for="productImage">Product Image</label>
+                <input type="file" id="productImage" placeholder="Product Image">
+            </div>
+            <button type="submit" id="addProductBtn">Add Product</button>
+        </form>
+
+        <div id="addProductToDom">
+
+        </div>
+    </div>
+</body>
+<script src="js/admin.js"></script>
+
+</html>
